@@ -242,8 +242,23 @@ app.post('/register', async (req, res) => {
 
                 }
 
-                await db.query("INSERT INTO luser(name, email, password) VALUES($1, $2, $3) ", [name, email, hash]);
-                res.redirect('/rooms');
+                let user = await db.query("INSERT INTO luser(name, email, password) VALUES($1, $2, $3) RETURNING *", [name, email, hash]);
+                
+                let registeredUser = user.rows[0];
+
+                req.login(registeredUser, function (err) {
+                    
+                    if (err) {
+                        
+                        console.log(err);
+
+                    } else {
+                        
+                        res.redirect('/rooms');
+
+                    }
+
+                });
 
             });
 
