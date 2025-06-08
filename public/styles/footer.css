@@ -1,0 +1,24 @@
+@font-face {
+    font-family: footerfont;
+    src: url('../runtime-font/RuntimeRegular-m2Odx.otf');
+}
+
+footer{
+
+    width: 100%;
+    height: 60px;
+    background-color: #FFFFFA;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+footer > p{
+
+    color: #65688B;
+    font-family: 'footerfont';
+    letter-spacing: 1px;
+    font-size: 15px;
+
+}

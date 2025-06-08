@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/styles/rooms.css">
+    <title>Rooms</title>
+</head>
+<body>
+    
+    <%- include('./Partials Folder/header.ejs') %>
+
+        <div class="secretContainer">
+
+            <div class="secretContainerBox">
+
+                <div class="roomsCard">
+
+                <% rooms.forEach((room) => { %>
+                 
+                   <div class="card">
+
+                        <div class="cardimage">
+
+                            <img src=<%= room.image %> alt="roomimage">
+
+                        </div>
+
+                        <div class="cardcontent">
+
+                            <h3><%= room.roomname %> </h3>
+
+                            <ul>
+
+                                <li><%= room.description1 %></li>
+                                <li><%= room.description2 %></li>
+                                <li><%= room.description3 %></li>
+
+                            </ul>
+
+                            <div class="pricelink">
+                                
+                                <p> Rs. <%= room.price %> /- </p>
+                                <button><a href="#">Book Now</a></button>
+
+                            </div>
+
+                        </div>
+
+                   </div>
+
+                <% }) %>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    <%- include('./Partials Folder/footer.ejs') %>
+
+</body>
+</html>

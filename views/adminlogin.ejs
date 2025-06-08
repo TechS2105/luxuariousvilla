@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/styles/adminlogin.css">
+    <title>Luxuarious Villa - Admin Login</title>
+</head>
+<body>
+    
+    <header>
+
+        <h1> Welcome To <b>Luxuarious <span>Villa</span></b> Admin Pannel </h1>
+
+    </header>
+
+    <div class="adminloginmain">
+
+        <div class="adminloginimage">
+
+            <img src="https://images.unsplash.com/photo-1490197415175-074fd86b1fcc?q=80&w=2074&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="villaimage">
+
+        </div>
+        <div class="adminloginform">
+
+            <h3> Sign In With <br> <span> LuxuariousVilla </span></h3>
+
+            <form action="/adminlogin" method="post">
+
+                <input type="text" name="username" placeholder="Enter Admin Username"><br><br>
+                <input type="password" name="password" placeholder="Enter Admin Password" pattern="^(?=.*[A-Z])(?=.*[a-z])(?=.*\d)(?=.*[~!@#$%^&*()_+={}[\]|:;’“`\<>.,/?-]).{8,}$" required minlength="8"><br><br>
+                <button type="submit"> Sign In </button>
+
+            </form>
+
+        </div>
+
+    </div>
+
+    <%- include('./Partials Folder/footer.ejs') %>
+
+</body>
+</html>

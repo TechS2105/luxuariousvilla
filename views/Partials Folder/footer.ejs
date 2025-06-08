@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/styles/footer.css">
+</head>
+<body>
+    
+    <footer>
+
+        <p> Copyright @ <span id="copyrightId"></span> || All Right Reserved </p>
+
+    </footer>
+
+    <script>
+
+        let date = new Date().getFullYear();
+        
+        document.querySelector("#copyrightId").innerHTML = `${date}`;
+
+    </script>
+
+</body>
+</html>

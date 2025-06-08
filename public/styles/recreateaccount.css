@@ -1,0 +1,116 @@
+*{
+
+    margin: 0;
+    padding: 0;
+    font-family: 'accounterrorfont';
+
+}
+
+@font-face {
+    font-family: 'accounterrorfont';
+    src: url('../runtime-font/RuntimeRegular-m2Odx.otf');
+}
+
+.mainrecreateaccount{
+
+    height: 80vh;
+    width: 100%;
+    display: flex;
+
+}
+
+.mainrecreateaccount > .errorimage{
+
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+
+}
+
+.errorimage > img{
+
+    width: 450px;
+    height: 450px;
+    object-fit: cover;
+    filter: drop-shadow(2px 2px 5px #292929);
+    animation: imageanime 15s infinite;
+
+}
+
+@keyframes imageanime {
+
+    50%{
+
+        transform:  scale(0.9);
+
+    }
+
+    0%, 100%{
+
+        transform: scale(1);
+
+    }
+    
+}
+
+.mainrecreateaccount > .errorcontent{
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 20px;
+
+}
+
+.errorcontent > h2{
+
+    font-family: 'accounterrorfont';
+    font-size: 50px;
+    color: #FFA305;
+    font-weight: bold;
+    letter-spacing: 2px;
+
+}
+
+.errorcontent h2 > #erroraccoutnspan{
+
+    color: #65688B;
+
+}
+
+.errorcontent > p{
+
+    font-family: 'accounterrorfont';
+    font-size: 17px;
+
+}
+
+.errorcontent > .accounterrorlink{
+
+    width: 100%;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+
+}
+
+.errorcontent .accounterrorlink > button{
+
+    background-color: #65688B;
+    border: none;
+    width: 100px;
+    height: 30px;
+
+}
+
+.errorcontent .accounterrorlink > a{
+
+    color: #FFA305;
+    text-decoration: none;
+    text-transform: capitalize;
+    font-size: 18px;
+
+}

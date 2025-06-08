@@ -1,0 +1,141 @@
+*{
+
+    margin: 0;
+    padding: 0;
+
+}
+
+@font-face {
+    font-family: 'adminloginfont';
+    src: url('../runtime-font/RuntimeRegular-m2Odx.otf');
+}
+
+header{
+
+    width: 100%;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    background-color: #65688B;
+
+}
+
+header > h1{
+
+    padding-left: 10px;
+    color: snow;
+    font-family: 'adminloginfont';
+
+}
+
+header h1 > b{
+
+    text-transform: uppercase;
+    padding: 0px 10px;
+
+}
+
+header h1 b> span{
+
+    color: #FFA305;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    
+}
+
+.adminloginmain{
+
+    width: 100%;
+    height: 80vh;
+    display: flex;
+
+}
+
+.adminloginmain > .adminloginimage{
+
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    width: 50%;
+    height: 100%;
+
+}
+
+.adminloginimage > img{
+
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+}
+
+.adminloginmain > .adminloginform{
+
+    background-color: #979EA4;
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+
+}
+
+.adminloginform > h3{
+
+    padding-left: 20px;
+    color: #fff;
+    font-family: 'adminloginfont';
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+    font-size: 50px;
+
+}
+
+.adminloginform h3 > span{
+
+    color: #FFA305;
+    text-transform: uppercase;
+    background-color: #fff;
+    padding: 0px 60px 0px 10px;
+    letter-spacing: 2px;
+    margin-top: 10px;
+    display: inline-flex;
+    border-radius: 5px;
+
+}
+
+.adminloginform > form{
+
+    padding-left: 20px;
+
+}
+
+.adminloginform form > input{
+
+    width: 450px;
+    height: 35px;
+    padding-left: 10px;
+    border: none;
+    outline: none;
+    font-family: 'adminloginfont';
+    border-radius: 5px;
+
+}
+
+.adminloginform form > button{
+
+    width: 150px;
+    background-color: #FFA305;
+    border: none;
+    outline: none;
+    height: 30px;
+    font-family: 'adminloginfont';
+    text-transform: uppercase;
+    color: #fff;
+    letter-spacing: 2px;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 5px;
+
+}

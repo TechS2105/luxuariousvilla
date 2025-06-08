@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/styles/recreateaccount.css">
+    <link
+    href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css"
+    rel="stylesheet"
+    />
+    <title>Re-Create Account Restriction!</title>
+</head>
+<body>
+    
+    <%- include('./Partials Folder/header.ejs') %>
+
+    <div class="mainrecreateaccount">
+
+        <div class="errorimage">
+
+            <img src="/images/mobile-password-forgot.png" alt="errorimage">
+
+        </div>
+        <div class="errorcontent">
+
+            <h2> Sorry! </h2>
+            <p> You have allready registered. Please Sign In with you account. </p>
+
+            <div class="accounterrorlink">
+
+                <button><a href="/login"> Sign Up </a></button>
+                <a href="/"> <i class="ri-home-7-line"></i> Go to home </a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <%- include('./Partials Folder/footer.ejs') %>
+
+</body>
+</html>

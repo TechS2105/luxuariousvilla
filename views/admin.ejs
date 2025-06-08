@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/styles/admin.css">
+    <link
+    href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css"
+    rel="stylesheet"
+    />
+    <title>Luxurious Villa - Admin</title>
+</head>
+<body>
+    
+    <%- include('./Partials Folder/header.ejs') %>
+
+        <div class="adminMain">
+
+            <div class="aminlogout">
+
+                <a href="/logout"> Logout </a>
+
+            </div>
+
+            <div class="admindetails">
+
+                <div class="adminheading"> 
+
+                    <h2> Admin Pannel </h2>
+
+                </div>
+
+                <div class="details">
+
+                    <table>
+
+                        <tr>
+
+                            <th> Id </th>
+                            <th> Name </th>
+                            <th> Email </th>
+                            <th> Delete </th>
+
+                        </tr>
+
+                        <% admin.forEach((adminDetails) => { %>
+
+                            <tr> 
+
+                                <td><%= adminDetails.id %></td>
+                                <td><%= adminDetails.name %> </td>
+                                <td><%= adminDetails.email %> </td>
+                                <td><a href="/admindetails/id/<%= adminDetails.id %>"> <i class="ri-delete-bin-6-line"></i> </a></td>
+    
+                            </tr>
+
+                       <% }) %>
+
+                    </table>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    <%- include('./Partials Folder/footer.ejs') %>
+
+</body>
+</html>

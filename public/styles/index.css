@@ -1,0 +1,147 @@
+*{
+
+    margin: 0;
+    padding: 0;
+
+}
+
+@font-face {
+    font-family: textfont;
+    src: url('../runtime-font/RuntimeRegular-m2Odx.otf');
+}
+
+body{
+
+    background-color: #212121;
+    width: 100%;
+    height: 81vh;
+
+}
+
+.container{
+
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.mainContainer{
+
+    width: 100%;
+    height: 100%;
+    background-image: url('https://images.unsplash.com/photo-1505843513577-22bb7d21e455?q=80&w=1932&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+
+}
+
+.mainContainer > .content{
+
+    width: 50%;
+    height: 100%;
+    background-color: #65688b83;
+    backdrop-filter: blur(3px);
+
+}
+
+
+.content > .contentsection{
+
+    height: 100%;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 20px;
+
+}
+
+.contentsection > h1{
+
+    font-family: 'textfont';
+    letter-spacing: 2px;
+    color: #ffa305;
+    margin-bottom: 20px;
+
+}
+
+.contentsection h1 > span{
+
+    background-color: #ffa305;
+    padding: 10px 20px;
+    display: inline-flex;
+    color: snow;
+    border-radius: 10px;
+
+}
+
+.contentsection > p{
+
+    font-family: 'textfont';
+    width: 80%;
+    line-height: 25px;
+    margin-bottom: 20px;
+    color: snow;
+
+}
+
+.contentsection > button{
+
+    width: 200px;
+    height: 50px;
+    background-color: snow;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    margin-bottom: 30px;
+
+}
+
+.contentsection button > a{
+
+    color: #ffa305;
+    font-weight: bold;
+    font-family: 'textfont';
+    letter-spacing: 5px;
+
+}
+
+.contentsection > .socialicons{
+
+    width: 100%;
+    display: flex;
+    align-items: center;
+
+}
+
+.socialicons > ul{
+
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 30px;
+    list-style-type: none;
+
+}
+
+.socialicons ul > li{
+
+    font-size: 25px;
+    background-color: #ffa305;
+    color: #212121;
+    height: 30px;
+    width: 30px;
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    cursor: pointer;
+    border: 5px solid snow;
+
+}
