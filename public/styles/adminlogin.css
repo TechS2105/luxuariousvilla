@@ -17,6 +17,7 @@ header{
     display: flex;
     align-items: center;
     background-color: #65688B;
+    justify-content: center;
 
 }
 
@@ -94,14 +95,16 @@ header h1 b> span{
 
 .adminloginform h3 > span{
 
-    color: #FFA305;
+    color: #fff;
     text-transform: uppercase;
-    background-color: #fff;
+    background-image: linear-gradient(90deg, #65688B 60%, #FFA305 50%);
     padding: 0px 60px 0px 10px;
     letter-spacing: 2px;
     margin-top: 10px;
     display: inline-flex;
     border-radius: 5px;
+    font-size: 60px;
+    border: 5px solid #FFA305;
 
 }
 
